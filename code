@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    
+    printf("Enter your variables: \n");
+    
+    printf("Please give a number as 1st variable:\t");
+    scanf("%d",&a);
+    
+    printf("Please give a number as 2nd variable:\t");
+    scanf("%d",&b);
+    
+    if (a>b){
+        a=a-b;
+        b=a+b;
+        a=b-a;
+        printf("After Swapping:\t a = %d, b = %d", a, b);
+        
+    }
+    
+    else if(a<b){
+        a=b-a;
+        b=b-a;
+        a=b+a;
+        printf("After Swapping:\t a = %d, b = %d", a, b);
+    }
+    
+    else
+    printf("a=b=%d",a);
+
+    return 0;
+}
